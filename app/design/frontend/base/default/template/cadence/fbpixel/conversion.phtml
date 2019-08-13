@@ -21,5 +21,5 @@ $currency_code = Mage::app()->getStore()->getCurrentCurrencyCode();
     fbq('track', 'Purchase', {value: '<?php echo $grand_total ?>', currency: '<?php echo $currency_code ?>'});
 </script>
 <noscript><img height="1" width="1" style="display:none"
-               src="https://www.facebook.com/tr?id=<?php echo $id ?>&ev=Purchase&value=<?php echo $grand_total ?>&currency=<?php echo $currency_code ?>&noscript=1"
+               src="https://www.facebook.com/tr?id=<?php echo $id ?>&ev=Purchase&cd[value]=<?php echo $grand_total ?>&cd[currency]=<?php echo $currency_code ?>&noscript=1"
         /></noscript>

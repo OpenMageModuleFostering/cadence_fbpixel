@@ -34,6 +34,56 @@
                 </cadence_fbpixel>
             </updates>
         </layout>
+        <events>
+            <sales_quote_product_add_after>
+                <observers>
+                    <cadence_fbpixel_add_to_cart>
+                        <class>Cadence_Fbpixel_Model_Observer</class>
+                        <method>onSalesQuoteProductAddAfter</method>
+                    </cadence_fbpixel_add_to_cart>
+                </observers>
+            </sales_quote_product_add_after>
+            <wishlist_add_product>
+                <observers>
+                    <cadence_fbpixel_add_to_wishlist>
+                        <class>Cadence_Fbpixel_Model_Observer</class>
+                        <method>onWishlistAddProduct</method>
+                    </cadence_fbpixel_add_to_wishlist>
+                </observers>
+            </wishlist_add_product>
+            <controller_action_predispatch_checkout_multishipping_index>
+                <observers>
+                    <cadence_fbpixel_initiate_checkout_multi>
+                        <class>Cadence_Fbpixel_Model_Observer</class>
+                        <method>onInitiateCheckout</method>
+                    </cadence_fbpixel_initiate_checkout_multi>
+                </observers>
+            </controller_action_predispatch_checkout_multishipping_index>
+            <controller_action_predispatch_checkout_onepage_index>
+                <observers>
+                    <cadence_fbpixel_initiate_checkout_onepage>
+                        <class>Cadence_Fbpixel_Model_Observer</class>
+                        <method>onInitiateCheckout</method>
+                    </cadence_fbpixel_initiate_checkout_onepage>
+                </observers>
+            </controller_action_predispatch_checkout_onepage_index>
+            <controller_action_predispatch_catalogsearch_result_index>
+                <observers>
+                    <cadence_fbpixel_search>
+                        <class>Cadence_Fbpixel_Model_Observer</class>
+                        <method>onSearch</method>
+                    </cadence_fbpixel_search>
+                </observers>
+            </controller_action_predispatch_catalogsearch_result_index>
+            <catalog_controller_product_init_after>
+                <observers>
+                    <cadence_fbpixel_product_init_after>
+                        <class>Cadence_Fbpixel_Model_Observer</class>
+                        <method>onCatalogControllerProductInitAfter</method>
+                    </cadence_fbpixel_product_init_after>
+                </observers>
+            </catalog_controller_product_init_after>
+        </events>
     </frontend>
     <default>
         <cadence_fbpixel>

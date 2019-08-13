@@ -1,25 +1,31 @@
 <?xml version="1.0"?>
 <package>
     <name>cadence_fbpixel</name>
-    <version>1.1.1</version>
+    <version>1.2.0</version>
     <stability>stable</stability>
     <license>GNU GPL</license>
     <channel>community</channel>
     <extends/>
-    <summary>This extension allows you to quickly implement Facebook tracking and conversion code on your Magento store. Supports Visitor and Purchase tracking events through the Facebook pixel</summary>
-    <description>&lt;p&gt;This Facebook Conversion Code extension allows you to quickly implement visitor and purchase events through the new Facebook Pixel. &lt;a href="http://www.cadence-labs.com/2015/03/free-magento-mail-chimp-popup-extention/" title="User Manual"&gt;&lt;strong&gt;Learn how it works.&lt;/strong&gt;&lt;/a&gt;. &lt;/p&gt;&#xD;
+    <summary>This extension allows you to quickly implement Facebook tracking and conversion code on your Magento store. Supports Visitor, Purchase, AddToCart, AddToWishlist, ViewProduct, Search, &amp; Initiate Checkout Events</summary>
+    <description>&lt;p&gt;This Facebook Conversion Code extension allows you to quickly implement events using the new Facebook Pixel. &lt;a href="http://www.cadence-labs.com/2015/03/free-magento-mail-chimp-popup-extention/" title="User Manual"&gt;&lt;strong&gt;Learn how it works.&lt;/strong&gt;&lt;/a&gt;. &lt;/p&gt;&#xD;
 &lt;p&gt;Click here to view the official&#xD;
 &lt;a href="http://www.cadence-labs.com/2015/03/free-magento-mail-chimp-popup-extention/" title="User Manual"&gt;Facebook Tracking &amp;amp; Conversion Code User Guide&lt;/a&gt; with detailed step-by-step instructions.  &lt;/p&gt;&#xD;
 &lt;h2&gt;Tracks Currency &amp;amp; Grand Total&lt;/h2&gt;&#xD;
-&lt;p&gt;This extension supports stores with multiple currencies, and tracks both the order grand total &amp;amp; order currency (conversion pixel only).&lt;/p&gt; &#xD;
+&lt;p&gt;This extension supports stores with multiple currencies, and supports Visitor, Purchase, AddToCart, AddToWishlist, ViewProduct, Search, &amp; Initiate Checkout Events.&lt;/p&gt; &#xD;
 &#xD;
 &lt;h2&gt;About The Developer&lt;/h2&gt;&#xD;
 &lt;p&gt;&lt;a href="http://www.cadence-labs.com/" title="Cadence Labs"&gt;Cadence Labs&lt;/a&gt; is a digital marketing, design, and Magento agency based in Boulder, Colorado. Our developers are Magento certified eCommerce geeks!&lt;/p&gt;</description>
-    <notes>Tested on 1.9</notes>
+    <notes>Tested on CE 1.9.x; &#xD;
+Added Events:&#xD;
+- AddToWishlist&#xD;
+- AddToCart&#xD;
+- InitiateCheckout&#xD;
+- ViewContent (Product)&#xD;
+- Search</notes>
     <authors><author><name>Cadence Labs</name><user>cadencelabs</user><email>alan@cadence-labs.com</email></author></authors>
-    <date>2016-07-19</date>
-    <time>02:43:54</time>
-    <contents><target name="magecommunity"><dir name="Cadence"><dir name="Fbpixel"><dir name="Helper"><file name="Data.php" hash="473e99657209bd2e1639640321cf0ae3"/></dir><dir name="etc"><file name="adminhtml.xml" hash="5b6a3e063450264720f766584dbd5055"/><file name="config.xml" hash="6cd8b235fdc17c943bb6efb3dda75e52"/><file name="system.xml" hash="17100ac3d7e76238368a4bf09b564a30"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Cadence_Fbpixel.xml" hash="3a82d06be6deb217df2bf11c543bc068"/></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="cadence_fbpixel.xml" hash="3287578213b7a92169d531606efbb9a4"/></dir><dir name="template"><dir name="cadence"><dir name="fbpixel"><file name="conversion.phtml" hash="956fccead55a19c4b19f3b8cbe71ffee"/><file name="visitor.phtml" hash="7752c825fd59c10b6971353d2e65fcd8"/></dir></dir></dir></dir></dir></dir></target></contents>
+    <date>2017-03-11</date>
+    <time>22:52:00</time>
+    <contents><target name="magecommunity"><dir name="Cadence"><dir name="Fbpixel"><dir name="Helper"><file name="Data.php" hash="df6d52af7fe615f77a53a18210b97104"/></dir><dir name="Model"><file name="Observer.php" hash="79f6413f672154a566f4fa2ec85982bf"/><file name="Session.php" hash="285559645c2b83a79556746a16065463"/></dir><dir name="etc"><file name="adminhtml.xml" hash="5b6a3e063450264720f766584dbd5055"/><file name="config.xml" hash="196df3b90f07c5fc95960622463d73c7"/><file name="system.xml" hash="f8f314ddb543665cd206bbd379ce3119"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Cadence_Fbpixel.xml" hash="3a82d06be6deb217df2bf11c543bc068"/></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="cadence_fbpixel.xml" hash="84c0ad44bca8b73138e31fbce73554a2"/></dir><dir name="template"><dir name="cadence"><dir name="fbpixel"><file name="conversion.phtml" hash="e602b1ffe10f1b2e21064ba09002657a"/><file name="events.phtml" hash="e3a770f7b4dec9c4632073cb3fb1191f"/><file name="visitor.phtml" hash="7752c825fd59c10b6971353d2e65fcd8"/></dir></dir></dir></dir></dir></dir></target></contents>
     <compatible/>
-    <dependencies><required><php><min>5.2.0</min><max>5.6.999</max></php></required></dependencies>
+    <dependencies><required><php><min>5.2.0</min><max>7.1.9</max></php></required></dependencies>
 </package>

@@ -3,7 +3,7 @@
     "type": "magento-module",
     "license": "GNU-GPL",
     "homepage": "",
-    "description": "This extension allows you to quickly implement Facebook tracking and conversion code on your Magento store. Supports Visitor and Purchase tracking events through the Facebook pixel",
+    "description": "This extension allows you to quickly implement Facebook tracking and conversion code on your Magento store. Supports Visitor, Purchase, AddToCart, AddToWishlist, ViewProduct, Search, & Initiate Checkout Events",
     "authors": [
     {
         "name": "Cadence Labs",

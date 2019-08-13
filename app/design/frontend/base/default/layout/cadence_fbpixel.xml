@@ -2,7 +2,8 @@
 <layout version="0.1.0">
     <default>
         <reference name="head">
-            <block type="core/template" template="cadence/fbpixel/visitor.phtml" />
+            <block type="core/template" template="cadence/fbpixel/visitor.phtml" name="cadence_fbpixel_visitor" />
+            <block type="core/template" template="cadence/fbpixel/events.phtml" name="cadence_fbpixel_events" />
         </reference>
     </default>
     <checkout_onepage_success translate="label">
