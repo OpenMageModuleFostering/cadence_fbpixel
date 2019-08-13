@@ -8,7 +8,7 @@
     </tabs>
     <sections>
         <cadence_fbpixel translate="label">
-            <label>Facebook Pixels</label>
+            <label>Facebook Pixel</label>
             <tab>cadence</tab>
             <frontend_type>text</frontend_type>
             <sort_order>100</sort_order>
@@ -17,7 +17,7 @@
             <show_in_store>1</show_in_store>
             <groups>
                 <visitor translate="label">
-                    <label>Visitor Pixel</label>
+                    <label>Facebook Pixel</label>
                     <show_in_default>1</show_in_default>
                     <show_in_website>1</show_in_website>
                     <show_in_store>1</show_in_store>
@@ -33,18 +33,18 @@
                             <show_in_store>1</show_in_store>
                         </enabled>
                         <pixel_id translate="label">
-                            <label>Visitor Pixel ID</label>
+                            <label>Pixel ID</label>
                             <frontend_type>text</frontend_type>
                             <sort_order>20</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
-                            <comment>This is the pixelId for the visitor tracking pixel (see the install guide for instructions on where to find this).</comment>
+                            <comment>This is the pixelId for the facebook pixel (see the install guide for instructions on where to find this).</comment>
                         </pixel_id>
                     </fields>
                 </visitor>
                 <conversion translate="label">
-                    <label>Conversion Pixel</label>
+                    <label>Conversion Event (Optional)</label>
                     <show_in_default>1</show_in_default>
                     <show_in_website>1</show_in_website>
                     <show_in_store>1</show_in_store>
@@ -58,16 +58,8 @@
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
+                            <comment>The base pixel must be enabled to track conversions.</comment>
                         </enabled>
-                        <pixel_id translate="label">
-                            <label>Conversion Pixel ID</label>
-                            <frontend_type>text</frontend_type>
-                            <sort_order>20</sort_order>
-                            <show_in_default>1</show_in_default>
-                            <show_in_website>1</show_in_website>
-                            <show_in_store>1</show_in_store>
-                            <comment>This is the pixelId for the conversion tracking pixel (see the install guide for instructions on where to find this).</comment>
-                        </pixel_id>
                     </fields>
                 </conversion>
             </groups>
