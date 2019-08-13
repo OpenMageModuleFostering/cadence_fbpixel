@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Cadence_Fbpixel>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Cadence_Fbpixel>
+    </modules>
+</config>

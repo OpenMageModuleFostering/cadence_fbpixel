@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/cadence_fbpixel",
+    "type": "magento-module",
+    "license": "GNU-GPL",
+    "homepage": "",
+    "description": "This extension allows you to quickly implement Facebook tracking and conversion code on your Magento store. Supports Visitor Tracking and Conversion (Checkout) Pixels",
+    "authors": [
+    {
+        "name": "Cadence Labs",
+        "email": "alan@cadence-labs.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

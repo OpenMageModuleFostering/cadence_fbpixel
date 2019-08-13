@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <cadence>
+            <label>Cadence Labs</label>
+            <sort_order>200</sort_order>
+        </cadence>
+    </tabs>
+    <sections>
+        <cadence_fbpixel translate="label">
+            <label>Facebook Pixels</label>
+            <tab>cadence</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>100</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <visitor translate="label">
+                    <label>Visitor Pixel</label>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <sort_order>1</sort_order>
+                    <fields>
+                        <enabled translate="label" module="cadence_fbpixel">
+                            <label>Enable</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_enabledisable</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </enabled>
+                        <pixel_id translate="label">
+                            <label>Visitor Pixel ID</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>This is the pixelId for the visitor tracking pixel (see the install guide for instructions on where to find this).</comment>
+                        </pixel_id>
+                    </fields>
+                </visitor>
+                <conversion translate="label">
+                    <label>Conversion Pixel</label>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <sort_order>2</sort_order>
+                    <fields>
+                        <enabled translate="label" module="cadence_fbpixel">
+                            <label>Enable</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_enabledisable</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </enabled>
+                        <pixel_id translate="label">
+                            <label>Conversion Pixel ID</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>This is the pixelId for the conversion tracking pixel (see the install guide for instructions on where to find this).</comment>
+                        </pixel_id>
+                    </fields>
+                </conversion>
+            </groups>
+        </cadence_fbpixel>
+    </sections>
+</config>
