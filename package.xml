@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
     <name>cadence_fbpixel</name>
-    <version>1.2.0</version>
+    <version>1.2.1</version>
     <stability>stable</stability>
     <license>GNU GPL</license>
     <channel>community</channel>
@@ -21,11 +21,13 @@ Added Events:&#xD;
 - AddToCart&#xD;
 - InitiateCheckout&#xD;
 - ViewContent (Product)&#xD;
-- Search</notes>
+- Search&#xD;
+&#xD;
+1.2.1 - fixed bug with content_ids not being on conversion event.</notes>
     <authors><author><name>Cadence Labs</name><user>cadencelabs</user><email>alan@cadence-labs.com</email></author></authors>
-    <date>2017-03-11</date>
-    <time>22:52:00</time>
-    <contents><target name="magecommunity"><dir name="Cadence"><dir name="Fbpixel"><dir name="Helper"><file name="Data.php" hash="df6d52af7fe615f77a53a18210b97104"/></dir><dir name="Model"><file name="Observer.php" hash="79f6413f672154a566f4fa2ec85982bf"/><file name="Session.php" hash="285559645c2b83a79556746a16065463"/></dir><dir name="etc"><file name="adminhtml.xml" hash="5b6a3e063450264720f766584dbd5055"/><file name="config.xml" hash="196df3b90f07c5fc95960622463d73c7"/><file name="system.xml" hash="f8f314ddb543665cd206bbd379ce3119"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Cadence_Fbpixel.xml" hash="3a82d06be6deb217df2bf11c543bc068"/></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="cadence_fbpixel.xml" hash="84c0ad44bca8b73138e31fbce73554a2"/></dir><dir name="template"><dir name="cadence"><dir name="fbpixel"><file name="conversion.phtml" hash="e602b1ffe10f1b2e21064ba09002657a"/><file name="events.phtml" hash="e3a770f7b4dec9c4632073cb3fb1191f"/><file name="visitor.phtml" hash="7752c825fd59c10b6971353d2e65fcd8"/></dir></dir></dir></dir></dir></dir></target></contents>
+    <date>2017-05-30</date>
+    <time>19:05:30</time>
+    <contents><target name="magecommunity"><dir name="Cadence"><dir name="Fbpixel"><dir name="Helper"><file name="Data.php" hash="5eb6200274634386f7a3998be55dd19b"/></dir><dir name="Model"><file name="Observer.php" hash="79f6413f672154a566f4fa2ec85982bf"/><file name="Session.php" hash="285559645c2b83a79556746a16065463"/></dir><dir name="etc"><file name="adminhtml.xml" hash="5b6a3e063450264720f766584dbd5055"/><file name="config.xml" hash="196df3b90f07c5fc95960622463d73c7"/><file name="system.xml" hash="f8f314ddb543665cd206bbd379ce3119"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Cadence_Fbpixel.xml" hash="3a82d06be6deb217df2bf11c543bc068"/></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="cadence_fbpixel.xml" hash="84c0ad44bca8b73138e31fbce73554a2"/></dir><dir name="template"><dir name="cadence"><dir name="fbpixel"><file name="conversion.phtml" hash="8f9af4b43ad5a97d6373dfbcf7d8968a"/><file name="events.phtml" hash="e3a770f7b4dec9c4632073cb3fb1191f"/><file name="visitor.phtml" hash="7752c825fd59c10b6971353d2e65fcd8"/></dir></dir></dir></dir></dir></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>5.2.0</min><max>7.1.9</max></php></required></dependencies>
 </package>

@@ -5,6 +5,8 @@
  */
 class Cadence_Fbpixel_Helper_Data extends Mage_Core_Helper_Abstract
 {
+    protected $_order;
+
     public function isVisitorPixelEnabled()
     {
         return Mage::getStoreConfig("cadence_fbpixel/visitor/enabled");
@@ -71,5 +73,64 @@ class Cadence_Fbpixel_Helper_Data extends Mage_Core_Helper_Abstract
     <!-- End Facebook {$event} Pixel -->
 HTML;
         return $html;
+    }
+
+    public function getOrderIDs()
+    {
+        $orderIDs = array();
+
+        foreach($this->_getOrder()->getAllVisibleItems() as $item){
+            $product = Mage::getModel('catalog/product')->load( $item->getProductId() );
+            $orderIDs = array_merge($orderIDs, $this->_getProductTrackID($product));
+        }
+
+        return json_encode($orderIDs);
+    }
+
+    protected function _getOrder(){
+        if(!$this->_order){
+            $orderId = Mage::getSingleton('checkout/type_onepage')->getCheckout()->getLastOrderId();
+            $this->_order =  Mage::getModel('sales/order')->load($orderId);
+        }
+
+        return $this->_order;
+    }
+
+    protected function _getProductTrackID($product)
+    {
+        $productType = $product->getTypeID();
+
+        if($productType == "grouped") {
+            return $this->_getProductIDs($product);
+        } else {
+            return $this->_getProductID($product);
+        }
+    }
+
+    protected function _getProductIDs($product)
+    {
+        $group = Mage::getModel('catalog/product_type_grouped')->setProduct($product);
+        $group_collection = $group->getAssociatedProductCollection();
+        $ids = array();
+
+        foreach ($group_collection as $group_product) {
+
+            $ids[] = $this->_getProductID($group_product);
+        }
+
+        return $ids;
+    }
+
+    protected function _getProductID($product)
+    {
+        return array(
+            $product->getSku()
+        );
+    }
+
+    public function getOrderItemsCount()
+    {
+        $order = $this->_getOrder();
+        return count($order->getItemsCollection());
     }
 }
