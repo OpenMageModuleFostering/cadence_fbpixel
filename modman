@@ -1,0 +1,4 @@
+app/code/community/Cadence/Fbpixel/                            app/code/community/Cadence/Fbpixel/
+app/design/frontend/base/default/layout/cadence_fbpixel.xml     app/design/frontend/base/default/layout/cadence_fbpixel.xml
+app/design/frontend/base/default/template/cadence/fbpixel/     app/design/frontend/base/default/template/cadence/fbpixel/
+app/etc/modules/Cadence_Fbpixel.xml                             app/etc/modules/Cadence_Fbpixel.xml
